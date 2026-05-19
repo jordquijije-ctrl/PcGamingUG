@@ -1,23 +1,19 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ComponentesGamingUG | Computadoras y PC Gamer en Guayaquil</title>
-    <!-- Incluir CSS -->
+    <title>ComponentesGamingUG | Contáctenos</title>
     <link rel="stylesheet" href="../public/css/styles.css">
-    <!-- Iconos Phosphor (para reemplazar imágenes con iconos web consistentes y limpios) -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
     <input type="checkbox" id="cart-toggle-checkbox" style="display: none;">
 
-    <!-- Header Principal -->
     <header class="top-header">
         <a href="index.html" class="brand">
-            <!-- Icono simulando el de TecnoGame.Ec -->
             <i class="ph-fill ph-game-controller" style="font-size: 2.5rem; color: #fff;"></i>
-            <span class="brand-text">COMPONENTESGAMINGUG</span>
+            <span class="brand-text">COMPONENTES GAMING UG</span>
         </a>
 
         <div class="search-container">
@@ -34,7 +30,7 @@
                 <i class="ph ph-map-pin action-icon"></i>
                 <span>Mapa</span>
             </div>
-            <a href="contacto.html" class="action-item">
+            <a href="contacto.html" class="action-item" style="opacity: 1; color: var(--primary);">
                 <i class="ph ph-envelope-simple action-icon"></i>
                 <span>Contáctenos</span>
             </a>
@@ -45,12 +41,10 @@
         </div>
     </header>
 
-    <!-- Navegación Secundaria (Categorías) -->
     <nav class="secondary-nav">
         <ul class="category-menu">
             <li class="category-item">
                 <a href="accesorios.html"><i class="ph ph-mouse"></i> Accesorios <i class="ph ph-caret-down"></i></a>
-                <!-- Dropdown Accesorios -->
                 <ul class="dropdown-menu">
                     <li><a href="auriculares.html"><i class="ph ph-headphones"></i> Auriculares</a></li>
                     <li><a href="mouse.html"><i class="ph ph-mouse-simple"></i> Mouse</a></li>
@@ -60,7 +54,6 @@
             
             <li class="category-item">
                 <a href="componentes-pc.html"><i class="ph ph-cpu"></i> Componentes PC <i class="ph ph-caret-down"></i></a>
-                <!-- Dropdown Mega Menú (según foto 4) -->
                 <ul class="dropdown-menu" style="min-width: 800px; display: flex; flex-direction: row; padding: 1rem; gap: 2rem;">
                     <div style="flex: 1;">
                         <h4 style="color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">CORE Y PLATAFORMA</h4>
@@ -81,38 +74,25 @@
             
             <li class="category-item">
                 <a href="computo.html"><i class="ph ph-laptop"></i> Cómputo <i class="ph ph-caret-down"></i></a>
-                <!-- Dropdown Cómputo (según foto 3) -->
                 <ul class="dropdown-menu">
                     <li><a href="celulares-tablets.html"><i class="ph ph-device-mobile"></i> Celulares, Tablets</a></li>
                     <li><a href="laptops.html"><i class="ph ph-laptop"></i> Laptops</a></li>
                     <li><a href="cpus.html"><i class="ph ph-computer-tower"></i> CPUs</a></li>
                 </ul>
             </li>
-            
+            <li class="category-item"><a href="consolas.html"><i class="ph ph-game-controller"></i> Consolas</a></li>
+            <li class="category-item"><a href="impresoras.html"><i class="ph ph-printer"></i> Impresoras</a></li>
+            <li class="category-item"><a href="software.html"><i class="ph ph-windows-logo"></i> Software</a></li>
             <li class="category-item">
-                <a href="consolas.html"><i class="ph ph-game-controller"></i> Consolas</a>
-            </li>
-            
-            <li class="category-item">
-                <a href="impresoras.html"><i class="ph ph-printer"></i> Impresoras</a>
-            </li>
-            
-            <li class="category-item">
-                <a href="software.html"><i class="ph ph-windows-logo"></i> Software</a>
-            </li>
-            
-                        <li class="category-item">
                 <a href="video.html"><i class="ph ph-youtube-logo"></i> Video <i class="ph ph-caret-down"></i></a>
-                <!-- Dropdown Video -->
                 <ul class="dropdown-menu">
-                    <li><a href="monitores.html"><i class="ph ph-monitor"></i> Monitores</a></li>
+                    <li><a href="video.html"><i class="ph ph-monitor"></i> Monitores</a></li>
                     <li><a href="proyectores.html"><i class="ph ph-projector-screen"></i> Proyectores</a></li>
                     <li><a href="televisores-tvbox.html"><i class="ph ph-television"></i> Televisores | Tv Box</a></li>
                 </ul>
             </li>
         </ul>
 
-        <!-- Carrito -->
         <label for="cart-toggle-checkbox" class="cart-section" id="cart-toggle">
             <span>$0.00</span>
             <div class="cart-icon-wrapper">
@@ -122,7 +102,6 @@
         </label>
     </nav>
 
-    <!-- Modal Carrito Lateral (según foto 1) -->
     <div class="cart-modal" id="cart-modal">
         <div class="cart-header">
             <h3>Mi Carrito</h3>
@@ -134,81 +113,99 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1 class="hero-title">Computadoras Y<br>PC Gamer En<br>Guayaquil |<br>ComponentesGamingUG</h1>
-            <p class="hero-subtitle">
-                En ComponentesGamingUG, tu <strong>tienda de computadoras en Guayaquil</strong>, encuentras todo lo que necesitas para armar o mejorar tu PC. Ofrecemos laptops, componentes de PC Gamer de alta calidad, ...
+    <section class="banner-contacto-limpio">
+        <div class="banner-contenido">
+            <h1 class="banner-titulo">Canales de Atención</h1>
+            <p class="banner-subtitulo">
+                ¿Deseas cotizar componentes a medida? !Escribenos¡ <strong>ComponentesGamingUG</strong>.
             </p>
         </div>
     </section>
 
-    <!-- Main Content -->
     <main class="main-container">
-        <h2 class="section-title">Sección: Cómputo</h2>
+        <h2 class="section-title">Formulario de Contacto</h2>
         
-        <div class="products-grid">
-            <!-- Producto 1: Nokia 1100 -->
-            <div class="product-card">
-                <img src="../public/images/nokia-1100.png" alt="Nokia 1100" class="product-image">
-                <div class="product-info">
-                    <span class="product-category">Celulares</span>
-                    <h3 class="product-title">Nokia 1100</h3>
-                    <div class="product-price">$ 15.00</div>
-                    <button class="btn-cart"><i class="ph ph-shopping-cart"></i> Añadir al Carrito</button>
-                </div>
-            </div>
+        <div class="contact-grid-layout">
+            <div class="contact-card">
+                <p class="contact-description">
+                    Por favor, ingrese la información requerida a continuación. Todos los campos marcados con asterisco (<span style="color: var(--danger);">*</span>) son obligatorios para poder procesar su requerimiento.
+                </p>
 
-            <!-- Producto 2: BlackBerry Bold 9900 -->
-            <div class="product-card">
-                <img src="../public/images/blackberry-bold-9900.png" alt="BlackBerry Bold 9900" class="product-image">
-                <div class="product-info">
-                    <span class="product-category">Celulares</span>
-                    <h3 class="product-title">BlackBerry Bold 9900</h3>
-                    <div class="product-price">$ 45.00</div>
-                    <button class="btn-cart"><i class="ph ph-shopping-cart"></i> Añadir al Carrito</button>
-                </div>
-            </div>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group-row">
+                        <div class="form-field-wrapper">
+                            <label for="txt-nombres">Nombres<span class="required-mark">*</span></label>
+                            <input type="text" id="txt-nombres" name="nombres" class="contact-input" placeholder="Ej: Juan Carlos" required autocomplete="given-name">
+                        </div>
+                        <div class="form-field-wrapper">
+                            <label for="txt-apellidos">Apellidos<span class="required-mark">*</span></label>
+                            <input type="text" id="txt-apellidos" name="apellidos" class="contact-input" placeholder="Ej: Perez Castro" required autocomplete="family-name">
+                        </div>
+                    </div>
 
-            <!-- Producto 3: Laptop ASUS X1404VA -->
-            <div class="product-card">
-                <img src="../public/images/laptop-asus-x1404va.png" alt="Laptop ASUS X1404VA i7" class="product-image">
-                <div class="product-info">
-                    <span class="product-category">Laptops</span>
-                    <h3 class="product-title">Laptop 14" i7 1355u, RAM 12GB, SSD 512GB, W11 - Asus X1404VA</h3>
-                    <div class="product-price">$ 699.99</div>
-                    <button class="btn-cart"><i class="ph ph-shopping-cart"></i> Añadir al Carrito</button>
-                </div>
-            </div>
+                    <div class="form-field-wrapper">
+                        <label for="txt-correo">Correo Electrónico<span class="required-mark">*</span></label>
+                        <input type="email" id="txt-correo" name="correo" class="contact-input" placeholder="ejemplo@correo.com" required autocomplete="email">
+                    </div>
 
-            <!-- Producto 4: CPU Lenovo ThinkCentre -->
-            <div class="product-card">
-                <img src="../public/images/lenovo-thinkcentre-m710t.png" alt="CPU Lenovo ThinkCentre M710t" class="product-image">
-                <div class="product-info">
-                    <span class="product-category">CPUs</span>
-                    <h3 class="product-title">CPU Empresarial i5 6th, RAM 8GB, SSD 256GB – Lenovo ThinkCentre M710t</h3>
-                    <div class="product-price">$ 299.99</div>
-                    <button class="btn-cart"><i class="ph ph-shopping-cart"></i> Añadir al Carrito</button>
-                </div>
-            </div>
+                    <div class="form-field-wrapper">
+                        <label for="txt-mensaje">Mensaje o Detalle del Requerimiento<span class="required-mark">*</span></label>
+                        <textarea id="txt-mensaje" name="mensaje" class="contact-textarea" maxlength="500" placeholder="Describa de forma clara los componentes que necesita" required></textarea>
+                        <div class="input-metadata-row">
+                            <span class="counter-display"><span id="char-count">0</span> / 500 caracteres</span>
+                        </div>
+                    </div>
 
-            <!-- Producto 5: CPU AMD Ryzen 7 5700G -->
-            <div class="product-card">
-                <img src="../public/images/cpu-ryzen7-5700g-gamer.jpg" alt="CPU Gamer Ryzen 7 5700G" class="product-image">
-                <div class="product-info">
-                    <span class="product-category">CPUs Gamer</span>
-                    <h3 class="product-title">CPU Gamer Ryzen 7 5700G, RAM 16GB, SSD 512GB, 2GB Gráficos</h3>
-                    <div class="product-price">$ 549.99</div>
-                    <button class="btn-cart"><i class="ph ph-shopping-cart"></i> Añadir al Carrito</button>
-                </div>
+                    <button type="submit" class="btn-submit-form">
+                        <i class="ph ph-paper-plane-tilt"></i> Enviar Formulario
+                    </button>
+                </form>
             </div>
         </div>
     </main>
 
-    <!-- Botón Flotante WhatsApp -->
     <a href="#" class="whatsapp-btn">
         <i class="ph-fill ph-whatsapp-logo"></i>
     </a>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('.contact-form');
+            const mensajeTextArea = document.getElementById('txt-mensaje');
+            const charCountSpan = document.getElementById('char-count');
+
+            // 1. Lógica del Contador de Caracteres
+            mensajeTextArea.addEventListener('input', function() {
+                const len = this.value.length;
+                charCountSpan.textContent = len;
+
+                // Alerta visual de aproximación al límite
+                if (len >= 470) {
+                    charCountSpan.style.color = 'var(--danger)';
+                    charCountSpan.style.fontWeight = '700';
+                } else {
+                    charCountSpan.style.color = 'var(--text-muted)';
+                    charCountSpan.style.fontWeight = '400';
+                }
+            });
+
+            // 2. Lógica de Envío Silencioso
+            form.addEventListener('submit', function(event) {
+                // Bloquea la recarga de la página (no hace nada a nivel de navegación)
+                event.preventDefault(); 
+
+                // Verificación silenciosa en consola (opcional)
+                console.log("Intercepción exitosa por Rios Viejo Andre: Formulario limpiado.");
+
+                // Vaciamos todos los inputs y el textarea
+                form.reset();
+
+                // Restauramos visualmente el contador a 0
+                charCountSpan.textContent = '0';
+                charCountSpan.style.color = 'var(--text-muted)';
+                charCountSpan.style.fontWeight = '400';
+            });
+        });
+    </script>
 </body>
 </html>
