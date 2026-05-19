@@ -739,3 +739,11 @@ html, body {
         right: 0;
     }
 }
+
+/* Deshabilitar clicks en el enlace principal de categorías con submenús en escritorio */
+@media (min-width: 769px) {
+    .category-item:has(.dropdown-menu) > a {
+        pointer-events: none;
+        cursor: default;
+    }
+}
