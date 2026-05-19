@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComponentesGamingUG | Computadoras y PC Gamer en Guayaquil</title>
+    <!-- Incluir CSS -->
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <!-- Iconos Phosphor (para reemplazar im�genes con iconos web consistentes y limpios) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <input type="checkbox" id="cart-toggle-checkbox" style="display: none;">
+
+    <!-- Header Principal -->
+    <header class="top-header">
+        <a href="index.html" class="brand">
+            <!-- Icono simulando el de TecnoGame.Ec -->
+            <i class="ph-fill ph-game-controller" style="font-size: 2.5rem; color: #fff;"></i>
+            <span class="brand-text">COMPONENTESGAMINGUG</span>
+        </a>
+
+        <div class="search-container">
+            <i class="ph ph-magnifying-glass search-icon"></i>
+            <input type="text" class="search-input" placeholder="Buscar Productos.. Ej: Rtx 5060">
+        </div>
+
+        <div class="header-actions">
+            <div class="action-item">
+                <i class="ph ph-user action-icon"></i>
+                <span>Mi Cuenta</span>
+            </div>
+            <div class="action-item">
+                <i class="ph ph-map-pin action-icon"></i>
+                <span>Mapa</span>
+            </div>
+            <div class="action-item">
+                <i class="ph ph-envelope-simple action-icon"></i>
+                <span>Cont�ctenos</span>
+            </div>
+            <div class="action-item">
+                <i class="ph ph-wrench action-icon"></i>
+                <span>S. T�cnico</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegaci�n Secundaria (Categor�as) -->
+    <nav class="secondary-nav">
+        <ul class="category-menu">
+            <li class="category-item">
+                <a href="accesorios.html"><i class="ph ph-mouse"></i> Accesorios <i class="ph ph-caret-down"></i></a>
+                <!-- Dropdown Accesorios -->
+                <ul class="dropdown-menu">
+                    <li><a href="auriculares.html"><i class="ph ph-headphones"></i> Auriculares</a></li>
+                    <li><a href="mouse.html"><i class="ph ph-mouse-simple"></i> Mouse</a></li>
+                    <li><a href="teclados.html"><i class="ph ph-keyboard"></i> Teclados</a></li>
+                </ul>
+            </li>
+            
+            <li class="category-item">
+                <a href="componentes-pc.html"><i class="ph ph-cpu"></i> Componentes PC <i class="ph ph-caret-down"></i></a>
+                <!-- Dropdown Mega Men� (seg�n foto 4) -->
+                <ul class="dropdown-menu" style="min-width: 800px; display: flex; flex-direction: row; padding: 1rem; gap: 2rem;">
+                    <div style="flex: 1;">
+                        <h4 style="color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">CORE Y PLATAFORMA</h4>
+                        <li style="border: none; padding: 0.5rem 0;"><a href="procesadores.html"><i class="ph ph-cpu"></i> Procesadores</a></li>
+                        <li style="border: none; padding: 0.5rem 0;"><a href="mainboard.html"><i class="ph ph-circuitry"></i> Mainboard</a></li>
+                        <li style="border: none; padding: 0.5rem 0;"><a href="memorias-ram.html"><i class="ph ph-memory"></i> Memorias Ram</a></li>
+                        <li style="border: none; padding: 0.5rem 0;"><a href="discos-duros.html"><i class="ph ph-hard-drive"></i> Discos Duros, SSD</a></li>
+                        <li style="border: none; padding: 0.5rem 0;"><a href="tarjetas-graficas.html"><i class="ph ph-graphics-card"></i> Tarjetas Gr�ficas</a></li>
+                    </div>
+                    <div style="flex: 1;">
+                        <h4 style="color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">CHASIS Y ENFRIAMIENTO</h4>
+                        <li style="border: none; padding: 0.5rem 0;"><a href="case-gabinetes.html"><i class="ph ph-computer-tower"></i> Case, Gabinetes</a></li>
+                        <li style="border: none; padding: 0.5rem 0;"><a href="coolers-refrigeracion.html"><i class="ph ph-fan"></i> Coolers, Refrigeraci�n</a></li>
+                        <li style="border: none; padding: 0.5rem 0;"><a href="fuentes-poder.html"><i class="ph ph-plug"></i> Fuentes de Poder</a></li>
+                    </div>
+                </ul>
+            </li>
+            
+            <li class="category-item">
+                <a href="computo.html"><i class="ph ph-laptop"></i> C�mputo <i class="ph ph-caret-down"></i></a>
+                <!-- Dropdown C�mputo (seg�n foto 3) -->
+                <ul class="dropdown-menu">
+                    <li><a href="celulares-tablets.html"><i class="ph ph-device-mobile"></i> Celulares, Tablets</a></li>
+                    <li><a href="laptops.html"><i class="ph ph-laptop"></i> Laptops</a></li>
+                    <li><a href="cpus.html"><i class="ph ph-computer-tower"></i> CPUs</a></li>
+                </ul>
+            </li>
+            
+            <li class="category-item">
+                <a href="consolas.html"><i class="ph ph-game-controller"></i> Consolas</a>
+            </li>
+            
+            <li class="category-item">
+                <a href="impresoras.html"><i class="ph ph-printer"></i> Impresoras</a>
+            </li>
+            
+            <li class="category-item">
+                <a href="software.html"><i class="ph ph-windows-logo"></i> Software</a>
+            </li>
+            
+            <li class="category-item">
+                <a href="video.html"><i class="ph ph-youtube-logo"></i> Video <i class="ph ph-caret-down"></i></a>
+                <!-- Dropdown Video (seg�n foto 2) -->
+                <ul class="dropdown-menu">
+                    <li><a href="video.html"><i class="ph ph-monitor"></i> Monitores</a></li>
+                    <li><a href="proyectores.html"><i class="ph ph-projector-screen"></i> Proyectores</a></li>
+                    <li><a href="televisores-tvbox.html"><i class="ph ph-television"></i> Televisores | Tv Box</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Carrito -->
+        <label for="cart-toggle-checkbox" class="cart-section" id="cart-toggle">
+            <span>$0.00</span>
+            <div class="cart-icon-wrapper">
+                <i class="ph ph-shopping-cart" style="font-size: 1.5rem;"></i>
+                <span class="cart-badge">0</span>
+            </div>
+        </label>
+    </nav>
+
+    <!-- Modal Carrito Lateral (seg�n foto 1) -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h3>Mi Carrito</h3>
+            <label for="cart-toggle-checkbox" class="close-cart" id="close-cart" style="cursor: pointer;"><i class="ph ph-x"></i></label>
+        </div>
+        <div class="cart-body">
+            <i class="ph ph-shopping-cart cart-empty-icon"></i>
+            <p>No hay productos en el carrito.</p>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Computadoras Y<br>PC Gamer En<br>Guayaquil |<br>ComponentesGamingUG</h1>
+            <p class="hero-subtitle">
+                En ComponentesGamingUG, tu <strong>tienda de computadoras en Guayaquil</strong>, encuentras todo lo que necesitas para armar o mejorar tu PC. Ofrecemos laptops, componentes de PC Gamer de alta calidad, ...
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <h2 class="section-title">Secci�n: Mainboard</h2>
+        
+                <div class="products-grid">
+            <!-- Motherboard 1: ASUS Prime B550M-A AC -->
+            <div class="product-card">
+                <img src="../public/images/asus-prime-b550m-a-ac.jpg" alt="ASUS Prime B550M-A AC AMD AM4 WiFi Aura Sync" class="product-image">
+                <div class="product-info">
+                    <span class="product-category">Motherboards</span>
+                    <h3 class="product-title">ASUS Prime B550M-A AC AMD AM4 mATX WiFi Aura Sync</h3>
+                    <div class="product-price">$ 109.99</div>
+                    <button class="btn-cart"><i class="ph ph-shopping-cart"></i> Anadir al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Motherboard 2: Gigabyte B850M D3HP -->
+            <div class="product-card">
+                <img src="../public/images/gigabyte-b850m-d3hp.jpg" alt="Gigabyte B850M D3HP AMD AM5 DDR5 PCIe 5" class="product-image">
+                <div class="product-info">
+                    <span class="product-category">Motherboards</span>
+                    <h3 class="product-title">Gigabyte B850M D3HP AMD AM5 DDR5 PCIe 5.0 Ultra Durable</h3>
+                    <div class="product-price">$ 179.99</div>
+                    <button class="btn-cart"><i class="ph ph-shopping-cart"></i> Anadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bot�n Flotante WhatsApp -->
+    <a href="#" class="whatsapp-btn">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+
+    <!-- L�gica eliminada: usando Checkbox Hack (CSS puro) -->
+</body>
+</html>
+
+
+
