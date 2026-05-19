@@ -512,10 +512,110 @@ ul {
     margin-left: 5px;
 }
 
+/* Adaptabilidad Global (Responsive Design)*/
 
-/* ==========================================
-   Entorno Integrado de Formulario de Contacto
-   ========================================== */
+/* Ajustes para pantallas medianas (Tablets) */
+@media (max-width: 1024px) {
+    .top-header {
+        padding: 1rem 2rem;
+    }
+    .secondary-nav {
+        padding: 0 2rem;
+    }
+    .hero-section {
+        padding: 3rem 2rem;
+    }
+    .main-container {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.2rem 1rem;
+        text-align: center;
+    }
+
+    .search-container {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: space-around;
+        gap: 0.5rem;
+    }
+
+    .action-item span {
+        display: none;
+    }
+    .action-item .action-icon {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+    }
+
+    .secondary-nav {
+        padding: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+    .secondary-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .category-menu {
+        padding: 0 1rem;
+        gap: 1.2rem;
+    }
+
+    .category-item {
+        white-space: nowrap;
+        padding: 0.8rem 0;
+    }
+
+    .category-item:hover .dropdown-menu {
+        display: none;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2.5rem 1rem 4.5rem 1rem;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    .hero-title br {
+        display: none;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .main-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        gap: 1.2rem;
+    }
+}
+
 .contact-grid-layout {
     display: block;
     max-width: 750px;
@@ -559,7 +659,7 @@ ul {
 .form-field-wrapper label {
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--bg-header); /* Consistencia con títulos de sección */
+    color: var(--bg-header);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -644,32 +744,35 @@ ul {
 }
 
 .banner-contacto-limpio {
-    background: linear-gradient(135deg, var(--bg-header) 0%, var(--primary) 100%); /* Degradado corporativo usando tus variables */
-    padding: 5rem 2rem; /* Le da buen aire arriba, abajo y a los lados */
+    background: linear-gradient(135deg, var(--bg-header) 0%, var(--primary) 100%);
+    padding: 4rem 2rem; /* Da suficiente espacio arriba y abajo */
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Centra perfectamente el título y subtítulo */
-    width: 100%;
+    text-align: center;
 }
 
 .banner-contenido {
-    max-width: 800px; /* Evita que el texto se estire feo en pantallas gigantes */
+    max-width: 800px;
     width: 100%;
-    margin: 0 auto;
 }
 
 .banner-titulo {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    color: var(--text-light); /* Texto blanco impecable */
+    color: var(--text-light);
     margin-bottom: 1rem;
-    letter-spacing: 0.5px;
 }
 
 .banner-subtitulo {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9); /* Blanco sutilmente transparente para que no sature */
+    color: rgba(255, 255, 255, 0.9);
     margin: 0 auto;
+}
+
+.titulo-centrado {
+    text-align: center !important;
+    border-bottom: none !important;
+    margin-bottom: 1.5rem !important;
 }
