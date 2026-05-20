@@ -128,11 +128,19 @@
             <h3>Mi Carrito</h3>
             <label for="cart-toggle-checkbox" class="close-cart" id="close-cart" style="cursor: pointer;"><i class="ph ph-x"></i></label>
         </div>
-        <div class="cart-body">
-            <i class="ph ph-shopping-cart cart-empty-icon"></i>
-            <p>No hay productos en el carrito.</p>
-        </div>
+        <div class="cart-body" id="cart-items">
+    <i class="ph ph-shopping-cart cart-empty-icon"></i>
+    <p>No hay productos en el carrito.</p>
+</div>
+
+<div id="cart-footer" style="display:none; padding:1rem; border-top:1px solid rgba(255,255,255,0.15);">
+    <div style="display:flex; justify-content:space-between; margin-bottom:12px; color:white; font-size:14px;">
+        Total: <strong id="cart-total">$0.00</strong>
     </div>
+    <button onclick="comprar()" style="width:100%; background:#3b82f6; color:white; border:none; border-radius:7px; padding:10px; font-size:13px; font-weight:600; cursor:pointer;">
+        🛒 Comprar ahora
+    </button>
+</div>
 
     <!-- Hero Section -->
     <section class="hero-section">
