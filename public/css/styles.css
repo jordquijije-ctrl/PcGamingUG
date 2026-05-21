@@ -164,6 +164,10 @@ ul {
     gap: 0.4rem;
 }
 
+.category-item:has(.dropdown-menu) > a {
+    pointer-events: none; /* Evita la navegación al hacer clic solo en categorías con menú desplegable */
+}
+
 .category-item:hover {
     color: var(--primary);
 }
