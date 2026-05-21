@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ComponentesGamingUG | Contáctenos</title>
+    <title>ComponentesGamingUG | ContÃ¡ctenos</title>
     <link rel="stylesheet" href="../public/css/styles.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="../public/js/cart.js" defer></script>    
 </head>
 <body>
     <input type="checkbox" id="cart-toggle-checkbox" style="display: none;">
@@ -32,11 +33,11 @@
             </div>
             <a href="contacto.html" class="action-item" style="opacity: 1; color: var(--primary);">
                 <i class="ph ph-envelope-simple action-icon"></i>
-                <span>Contáctenos</span>
+                <span>ContÃ¡ctenos</span>
             </a>
             <div class="action-item">
                 <i class="ph ph-wrench action-icon"></i>
-                <span>S. Técnico</span>
+                <span>S. TÃ©cnico</span>
             </div>
         </div>
     </header>
@@ -61,19 +62,19 @@
                         <li style="border: none; padding: 0.5rem 0;"><a href="mainboard.html"><i class="ph ph-circuitry"></i> Mainboard</a></li>
                         <li style="border: none; padding: 0.5rem 0;"><a href="memorias-ram.html"><i class="ph ph-memory"></i> Memorias Ram</a></li>
                         <li style="border: none; padding: 0.5rem 0;"><a href="discos-duros.html"><i class="ph ph-hard-drive"></i> Discos Duros, SSD</a></li>
-                        <li style="border: none; padding: 0.5rem 0;"><a href="tarjetas-graficas.html"><i class="ph ph-graphics-card"></i> Tarjetas Gráficas</a></li>
+                        <li style="border: none; padding: 0.5rem 0;"><a href="tarjetas-graficas.html"><i class="ph ph-graphics-card"></i> Tarjetas GrÃ¡ficas</a></li>
                     </div>
                     <div style="flex: 1;">
                         <h4 style="color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">CHASIS Y ENFRIAMIENTO</h4>
                         <li style="border: none; padding: 0.5rem 0;"><a href="case-gabinetes.html"><i class="ph ph-computer-tower"></i> Case, Gabinetes</a></li>
-                        <li style="border: none; padding: 0.5rem 0;"><a href="coolers-refrigeracion.html"><i class="ph ph-fan"></i> Coolers, Refrigeración</a></li>
+                        <li style="border: none; padding: 0.5rem 0;"><a href="coolers-refrigeracion.html"><i class="ph ph-fan"></i> Coolers, RefrigeraciÃ³n</a></li>
                         <li style="border: none; padding: 0.5rem 0;"><a href="fuentes-poder.html"><i class="ph ph-plug"></i> Fuentes de Poder</a></li>
                     </div>
                 </ul>
             </li>
             
             <li class="category-item">
-                <a href="computo.html"><i class="ph ph-laptop"></i> Cómputo <i class="ph ph-caret-down"></i></a>
+                <a href="computo.html"><i class="ph ph-laptop"></i> CÃ³mputo <i class="ph ph-caret-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="celulares-tablets.html"><i class="ph ph-device-mobile"></i> Celulares, Tablets</a></li>
                     <li><a href="laptops.html"><i class="ph ph-laptop"></i> Laptops</a></li>
@@ -115,9 +116,9 @@
 
     <section class="banner-contacto-limpio">
         <div class="banner-contenido">
-            <h1 class="banner-titulo">Canales de Atención</h1>
+            <h1 class="banner-titulo">Canales de AtenciÃ³n</h1>
             <p class="banner-subtitulo">
-                ¿Deseas cotizar componentes a medida? !Escribenos¡ <strong>ComponentesGamingUG</strong>.
+                Â¿Deseas cotizar componentes a medida? !EscribenosÂ¡ <strong>ComponentesGamingUG</strong>.
             </p>
         </div>
     </section>
@@ -128,7 +129,7 @@
         <div class="contact-grid-layout">
             <div class="contact-card">
                 <p class="contact-description">
-                    Por favor, ingrese la información requerida a continuación. Todos los campos marcados con asterisco (<span style="color: var(--danger);">*</span>) son obligatorios para poder procesar su requerimiento.
+                    Por favor, ingrese la informaciÃ³n requerida a continuaciÃ³n. Todos los campos marcados con asterisco (<span style="color: var(--danger);">*</span>) son obligatorios para poder procesar su requerimiento.
                 </p>
 
                 <form class="contact-form" action="#" method="POST">
@@ -144,7 +145,7 @@
                     </div>
 
                     <div class="form-field-wrapper">
-                        <label for="txt-correo">Correo Electrónico<span class="required-mark">*</span></label>
+                        <label for="txt-correo">Correo ElectrÃ³nico<span class="required-mark">*</span></label>
                         <input type="email" id="txt-correo" name="correo" class="contact-input" placeholder="ejemplo@correo.com" required autocomplete="email">
                     </div>
 
@@ -174,12 +175,12 @@
             const mensajeTextArea = document.getElementById('txt-mensaje');
             const charCountSpan = document.getElementById('char-count');
 
-            // 1. Lógica del Contador de Caracteres
+            // 1. LÃ³gica del Contador de Caracteres
             mensajeTextArea.addEventListener('input', function() {
                 const len = this.value.length;
                 charCountSpan.textContent = len;
 
-                // Alerta visual de aproximación al límite
+                // Alerta visual de aproximaciÃ³n al lÃ­mite
                 if (len >= 470) {
                     charCountSpan.style.color = 'var(--danger)';
                     charCountSpan.style.fontWeight = '700';
@@ -189,13 +190,13 @@
                 }
             });
 
-            // 2. Lógica de Envío Silencioso
+            // 2. LÃ³gica de EnvÃ­o Silencioso
             form.addEventListener('submit', function(event) {
-                // Bloquea la recarga de la página (no hace nada a nivel de navegación)
+                // Bloquea la recarga de la pÃ¡gina (no hace nada a nivel de navegaciÃ³n)
                 event.preventDefault(); 
 
-                // Verificación silenciosa en consola (opcional)
-                console.log("Intercepción exitosa por Rios Viejo Andre: Formulario limpiado.");
+                // VerificaciÃ³n silenciosa en consola (opcional)
+                console.log("IntercepciÃ³n exitosa por Rios Viejo Andre: Formulario limpiado.");
 
                 // Vaciamos todos los inputs y el textarea
                 form.reset();
@@ -209,3 +210,4 @@
     </script>
 </body>
 </html>
+

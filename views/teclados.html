@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +6,9 @@
     <title>ComponentesGamingUG | Computadoras y PC Gamer en Guayaquil</title>
     <!-- Incluir CSS -->
     <link rel="stylesheet" href="../public/css/styles.css">
-    <!-- Iconos Phosphor (para reemplazar imágenes con iconos web consistentes y limpios) -->
+    <!-- Iconos Phosphor (para reemplazar imÃ¡genes con iconos web consistentes y limpios) -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="../public/js/cart.js" defer></script>    
 </head>
 <body>
     <input type="checkbox" id="cart-toggle-checkbox" style="display: none;">
@@ -36,16 +37,16 @@
             </div>
             <a href="contacto.html" class="action-item">
                 <i class="ph ph-envelope-simple action-icon"></i>
-                <span>Contáctenos</span>
+                <span>ContÃ¡ctenos</span>
             </a>
             <div class="action-item">
                 <i class="ph ph-wrench action-icon"></i>
-                <span>S. Técnico</span>
+                <span>S. TÃ©cnico</span>
             </div>
         </div>
     </header>
 
-    <!-- Navegación Secundaria (Categorías) -->
+    <!-- NavegaciÃ³n Secundaria (CategorÃ­as) -->
     <nav class="secondary-nav">
         <ul class="category-menu">
             <li class="category-item">
@@ -60,7 +61,7 @@
             
             <li class="category-item">
                 <a href="componentes-pc.html"><i class="ph ph-cpu"></i> Componentes PC <i class="ph ph-caret-down"></i></a>
-                <!-- Dropdown Mega Menú (según foto 4) -->
+                <!-- Dropdown Mega MenÃº (segÃºn foto 4) -->
                 <ul class="dropdown-menu" style="min-width: 800px; display: flex; flex-direction: row; padding: 1rem; gap: 2rem;">
                     <div style="flex: 1;">
                         <h4 style="color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">CORE Y PLATAFORMA</h4>
@@ -68,20 +69,20 @@
                         <li style="border: none; padding: 0.5rem 0;"><a href="mainboard.html"><i class="ph ph-circuitry"></i> Mainboard</a></li>
                         <li style="border: none; padding: 0.5rem 0;"><a href="memorias-ram.html"><i class="ph ph-memory"></i> Memorias Ram</a></li>
                         <li style="border: none; padding: 0.5rem 0;"><a href="discos-duros.html"><i class="ph ph-hard-drive"></i> Discos Duros, SSD</a></li>
-                        <li style="border: none; padding: 0.5rem 0;"><a href="tarjetas-graficas.html"><i class="ph ph-graphics-card"></i> Tarjetas Gráficas</a></li>
+                        <li style="border: none; padding: 0.5rem 0;"><a href="tarjetas-graficas.html"><i class="ph ph-graphics-card"></i> Tarjetas GrÃ¡ficas</a></li>
                     </div>
                     <div style="flex: 1;">
                         <h4 style="color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">CHASIS Y ENFRIAMIENTO</h4>
                         <li style="border: none; padding: 0.5rem 0;"><a href="case-gabinetes.html"><i class="ph ph-computer-tower"></i> Case, Gabinetes</a></li>
-                        <li style="border: none; padding: 0.5rem 0;"><a href="coolers-refrigeracion.html"><i class="ph ph-fan"></i> Coolers, Refrigeración</a></li>
+                        <li style="border: none; padding: 0.5rem 0;"><a href="coolers-refrigeracion.html"><i class="ph ph-fan"></i> Coolers, RefrigeraciÃ³n</a></li>
                         <li style="border: none; padding: 0.5rem 0;"><a href="fuentes-poder.html"><i class="ph ph-plug"></i> Fuentes de Poder</a></li>
                     </div>
                 </ul>
             </li>
             
             <li class="category-item">
-                <a href="computo.html"><i class="ph ph-laptop"></i> Cómputo <i class="ph ph-caret-down"></i></a>
-                <!-- Dropdown Cómputo (según foto 3) -->
+                <a href="computo.html"><i class="ph ph-laptop"></i> CÃ³mputo <i class="ph ph-caret-down"></i></a>
+                <!-- Dropdown CÃ³mputo (segÃºn foto 3) -->
                 <ul class="dropdown-menu">
                     <li><a href="celulares-tablets.html"><i class="ph ph-device-mobile"></i> Celulares, Tablets</a></li>
                     <li><a href="laptops.html"><i class="ph ph-laptop"></i> Laptops</a></li>
@@ -122,7 +123,7 @@
         </label>
     </nav>
 
-    <!-- Modal Carrito Lateral (según foto 1) -->
+    <!-- Modal Carrito Lateral (segÃºn foto 1) -->
     <div class="cart-modal" id="cart-modal">
         <div class="cart-header">
             <h3>Mi Carrito</h3>
@@ -146,41 +147,43 @@
 
     <!-- Main Content -->
     <main class="main-container">
-        <h2 class="section-title">Sección: Teclados</h2>
+        <h2 class="section-title">SecciÃ³n: Teclados</h2>
         
                 <div class="products-grid">
             <!-- Teclado 1: Armaggeddon MKA-1C NEX -->
             <div class="product-card">
-                <img src="../public/images/armaggeddon-mka1c-nex.jpg" alt="Armaggeddon MKA-1C NEX Mecánico 60% Hotswap RGB" class="product-image">
+                <img src="../public/images/armaggeddon-mka1c-nex.jpg" alt="Armaggeddon MKA-1C NEX MecÃ¡nico 60% Hotswap RGB" class="product-image">
                 <div class="product-info">
-                    <span class="product-category">Teclados Mecánicos</span>
-                    <h3 class="product-title">Armaggeddon MKA-1C NEX Mecánico 60% Hotswap RGB Type-C Anti-Ghosting</h3>
+                    <span class="product-category">Teclados MecÃ¡nicos</span>
+                    <h3 class="product-title">Armaggeddon MKA-1C NEX MecÃ¡nico 60% Hotswap RGB Type-C Anti-Ghosting</h3>
                     <div class="product-price">$ 49.99</div>
-                    <button class="btn-cart"><i class="ph ph-shopping-cart"></i> Añadir al Carrito</button>
+                    <button class="btn-cart"><i class="ph ph-shopping-cart"></i> AÃ±adir al Carrito</button>
                 </div>
             </div>
 
-            <!-- Teclado 2: Redragon Mecánico RGB -->
+            <!-- Teclado 2: Redragon MecÃ¡nico RGB -->
             <div class="product-card">
-                <img src="../public/images/redragon-teclado-mecanico-rgb.jpg" alt="Redragon Teclado Mecánico TKL RGB Gaming" class="product-image">
+                <img src="../public/images/redragon-teclado-mecanico-rgb.jpg" alt="Redragon Teclado MecÃ¡nico TKL RGB Gaming" class="product-image">
                 <div class="product-info">
-                    <span class="product-category">Teclados Mecánicos</span>
-                    <h3 class="product-title">Redragon Teclado Mecánico TKL RGB Retroiluminado Gaming</h3>
+                    <span class="product-category">Teclados MecÃ¡nicos</span>
+                    <h3 class="product-title">Redragon Teclado MecÃ¡nico TKL RGB Retroiluminado Gaming</h3>
                     <div class="product-price">$ 39.99</div>
-                    <button class="btn-cart"><i class="ph ph-shopping-cart"></i> Añadir al Carrito</button>
+                    <button class="btn-cart"><i class="ph ph-shopping-cart"></i> AÃ±adir al Carrito</button>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Botón Flotante WhatsApp -->
+    <!-- BotÃ³n Flotante WhatsApp -->
     <a href="#" class="whatsapp-btn">
         <i class="ph-fill ph-whatsapp-logo"></i>
     </a>
 
-    <!-- Lógica eliminada: usando Checkbox Hack (CSS puro) -->
+    <!-- LÃ³gica eliminada: usando Checkbox Hack (CSS puro) -->
 </body>
 </html>
+
+
 
 
 
