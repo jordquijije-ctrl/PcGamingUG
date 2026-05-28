@@ -1,36 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Detectar los componentes del botón "Mi Cuenta"
-    const accountLink = document.getElementById('account-menu-item');
-    const accountText = document.getElementById('account-text');
-    const accountIcon = document.getElementById('account-icon');
+    // Busca el contenedor de "Mi Cuenta" en tu header global
+    const accountText = document.querySelector('.header-actions .action-item span');
+    const accountIcon = document.querySelector('.header-actions .action-item i');
+    const accountLink = document.querySelector('.header-actions .action-item');
 
-    // Verificar si el usuario ya inició sesión en sessionStorage
     const isLoggedIn = sessionStorage.getItem('isLoggedIn');
     const userEmail = sessionStorage.getItem('userEmail');
 
+    // Si hay una sesión activa en el navegador...
     if (isLoggedIn === 'true' && userEmail) {
-        // 1. Extraer la primera parte del correo para no saturar el Header visualmente
-        const username = userEmail.split('@')[0];
-
-        // 2. Modificar el texto e icono para reflejar la sesión activa
-        if (accountText) accountText.textContent = username.toUpperCase();
+        // Extrae el nombre antes del @ (ej: "estudiante")
+        const username = userEmail.split('@')[0].toUpperCase();
+        
+        if (accountText) accountText.textContent = username;
         if (accountIcon) {
-            accountIcon.className = "ph-fill ph-user-circle-gear"; // Cambia a un icono de usuario logueado
-            accountIcon.style.color = "#3b82f6"; // Color azul destacado (Primary)
+            accountIcon.className = "ph-fill ph-user-circle-gear";
+            accountIcon.style.color = "#3b82f6"; // Lo pone azul gaming
         }
 
-        // 3. Cambiar el comportamiento del clic: En vez de ir al login, ahora sirve para Cerrar Sesión
+        // Si le da clic al nombre, se convierte en un botón de cerrar sesión
         if (accountLink) {
-            accountLink.href = "#";
+            accountLink.style.cursor = "pointer";
             accountLink.addEventListener('click', (e) => {
                 e.preventDefault();
-                
-                // Confirmación intuitiva de cierre de sesión
                 if (confirm('¿Deseas cerrar tu sesión actual?')) {
-                    sessionStorage.removeItem('isLoggedIn');
-                    sessionStorage.removeItem('userEmail');
-                    alert('Sesión finalizada correctamente.');
-                    window.location.reload(); // Recarga la página actual con el estado limpio
+                    sessionStorage.clear();
+                    window.location.href = 'index.html';
                 }
             });
         }
