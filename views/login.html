@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | ComponentesGamingUG</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="../public/js/auth.js" defer></script>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #0f172a; margin: 0; font-family: system-ui, -apple-system, sans-serif;">
+
+    <div class="login-card" style="background: #1e293b; padding: 2.5rem; border-radius: 12px; width: 100%; max-width: 400px; box-shadow: 0 10px 25px rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.05); margin: 20px;">
+        
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <a href="index.html" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                <i class="ph-fill ph-game-controller" style="font-size: 2.5rem; color: #3b82f6;"></i>
+                <span style="color: #fff; font-weight: 800; font-size: 1.2rem; letter-spacing: 1px;">COMPONENTES GAMING UG</span>
+            </a>
+            <h2 style="color: #fff; margin: 0; font-size: 1.5rem; font-weight: 700;">Bienvenido de nuevo</h2>
+            <p style="color: #94a3b8; font-size: 0.875rem; margin-top: 0.5rem;">Ingresa tus credenciales para acceder a tu cuenta</p>
+        </div>
+
+        <div id="error-container" style="display: none; background: rgba(239, 68, 68, 0.1); border: 1px solid #ef4444; color: #f87171; padding: 0.75rem; border-radius: 8px; font-size: 0.875rem; margin-bottom: 1.25rem; align-items: center; gap: 0.5rem;">
+            <i class="ph ph-warning-circle" style="font-size: 1.25rem; flex-shrink: 0;"></i>
+            <span id="error-text">Credenciales incorrectas.</span>
+        </div>
+
+        <form id="login-form" novalidate>
+            <div style="margin-bottom: 1.25rem;">
+                <label for="email" style="display: block; color: #cbd5e1; font-size: 0.875rem; margin-bottom: 0.5rem; font-weight: 500;">Correo Electrónico</label>
+                <div style="position: relative;">
+                    <i class="ph ph-envelope" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #64748b; font-size: 1.2rem;"></i>
+                    <input type="email" id="email" placeholder="ejemplo@correo.com" style="width: 100%; background: #0f172a; border: 1px solid #334155; padding: 12px 12px 12px 40px; border-radius: 8px; color: #fff; box-sizing: border-box; outline: none; font-size: 0.95rem; transition: border-color 0.2s;">
+                </div>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+                <label for="password" style="display: block; color: #cbd5e1; font-size: 0.875rem; margin-bottom: 0.5rem; font-weight: 500;">Contraseña</label>
+                <div style="position: relative;">
+                    <i class="ph ph-lock" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #64748b; font-size: 1.2rem;"></i>
+                    <input type="password" id="password" placeholder="••••••••" style="width: 100%; background: #0f172a; border: 1px solid #334155; padding: 12px 12px 12px 40px; border-radius: 8px; color: #fff; box-sizing: border-box; outline: none; font-size: 0.95rem; transition: border-color 0.2s;">
+                </div>
+            </div>
+
+            <button type="submit" style="width: 100%; background: #3b82f6; color: white; border: none; border-radius: 8px; padding: 12px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background-color 0.2s; display: flex; justify-content: center; align-items: center; gap: 0.5rem;">
+                <i class="ph ph-sign-in"></i> Iniciar Sesión
+            </button>
+        </form>
+
+        <div style="text-align: center; margin-top: 1.75rem; border-top: 1px solid #334155; padding-top: 1.25rem;">
+            <a href="index.html" style="color: #94a3b8; font-size: 0.875rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem; transition: color 0.2s;">
+                <i class="ph ph-arrow-left"></i> Volver a la tienda
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,8 @@
     <!-- Iconos Phosphor (para reemplazar imágenes con iconos web consistentes y limpios) -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="../public/js/cart.js" defer></script>
+    <script src="../public/js/cart.js" defer></script>    
+    <script src="../public/js/navbar-auth.js" defer></script>
 </head>
 <body>
     <input type="checkbox" id="cart-toggle-checkbox" style="display: none;">
@@ -27,10 +29,10 @@
         </div>
 
         <div class="header-actions">
-            <div class="action-item">
-                <i class="ph ph-user action-icon"></i>
-                <span>Mi Cuenta</span>
-            </div>
+            <a href="login.html" class="action-item" id="account-menu-item" style="text-decoration: none; color: inherit;">
+                <i class="ph ph-user action-icon" id="account-icon"></i>
+                <span id="account-text">Mi Cuenta</span>
+            </a>
             <div class="action-item">
                 <i class="ph ph-map-pin action-icon"></i>
                 <span>Mapa</span>
